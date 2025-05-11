@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EasyClick-Trang web tìm kiếm việc làm tiện lợi và hữu ích cho giới trẻ"
+    />
+    <meta name="keyword" content="EasyClick, tìm việc, việc làm" />
+    <title>EasyClick</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--  -->
+    <!-- Link Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Logo -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <!--  -->
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!------HEADER SECTION BEGIN------>
+    <header>
+      <div class="wrapper">
+        <div class="container header flex">
+          <div class="nav-left flex">
+            <a class="logo-company flex" href="index.html"
+              ><img src="images/logo-com.png"
+            /></a>
+            <ul class="menu flex">
+              <li class="menu-item flex">
+                <a href="profile.html">Hồ sơ</a>
+                <ul>
+                  <li><a href="profile.html">Profile/CV</a></li>
+                  <li><a href="construction.html">Mẫu CV</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="jobs.html" style="color: var(--primary-color)"
+                  >Việc làm</a
+                >
+                <ul>
+                  <li><a href="jobs.html">Tìm việc</a></li>
+                  <li><a href="jobs.html">Công việc IT</a></li>
+                  <li><a href="jobs.html">Công việc Fulltime</a></li>
+                  <li><a href="jobs.html">Công việc Partime</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="companies.html">Công ty</a>
+              </li>
+              <li class="menu-item flex">
+                <a href="about.html">Về chúng tôi</a>
+              </li>
+              <li class="menu-item flex">
+                <a href="contact.html">Liên lạc</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-right flex">
+            <a href="login.html" class="button-signup"> Đăng Nhập </a>
+            <a href="register.html" class="button-signin"> Đăng ký </a>
+            <a href="construction.html" class="button-resume">
+              Nhà tuyển dụng / Đăng tin
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------HEADER SECTION END------>
+
+    <!------CONTENT SECTION BEGIN------>
+    <main>
+      <div class="cover-page flex">
+        <h1 class="title-page flex">TÌM VIỆC</h1>
+      </div>
+      <!-- Thanh tim kiem -->
+      <div class="research-bar flex">
+        <div class="row flex">
+          <div class="form flex">
+            <input
+              type="text"
+              id="SearchJob"
+              onkeyup="searchJobFuntion()"
+              class="flex"
+              placeholder="Nhập tên công việc cần tìm"
+            />
+          </div>
+        </div>
+        <div>
+          <div class="form">
+            <button class="search"><a href="jobs.html">Tìm kiếm</a></button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!-- Danh sách việc -->
+      <div class="job-section flex">
+        <div class="job-left-side flex">
+          <div class="job-object full-time flex">
+            <div class="job-content flex">
+              <img
+                class="img-job flex"
+                src="images/ava1.jpg"
+                alt="ava1"
+                style="width: 90px; height: 90px"
+              />
+              <div class="job-description flex">
+                <a class="job-name flex" href="job_detail.html"
+                  >Chuyên viên quan hệ khách hàng</a
+                >
+                <div>
+                  <span style="color: black"
+                    ><i class="fa fa-map-marker-alt" style="color: green"></i>
+                    Thành phố Hồ Chí Minh</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-clock" style="color: green"></i>
+                    Full-time</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-money-bill-alt" style="color: green"></i>
+                    Hơn 10 triệu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="apply flex">
+              <div class="apply-section flex">
+                <a class="heart-btn" href=""
+                  ><i class="far fa-heart" style="color: green"></i
+                ></a>
+                <a class="apply-btn" href="">Apply Now</a>
+              </div>
+              <div class="date">
+                <i
+                  class="far fa-calendar-alt"
+                  style="color: green; font-size: 14px"
+                ></i>
+                Hạn chót: Tháng 1, 2045
+              </div>
+            </div>
+          </div>
+          <div class="job-object full-time over10 flex">
+            <div class="job-content flex">
+              <img
+                class="img-job flex"
+                src="images/ava1.jpg"
+                alt="ava1"
+                style="width: 90px; height: 90px"
+              />
+              <div class="job-description flex">
+                <a class="job-name flex" href="job_detail.html"
+                  >
+                  Nhân Viên Kinh Doanh / Tư Vấn / Chăm Sóc Khách Hàng / Sales Khu Vực Hà Nội</a
+                >
+                <div>
+                  <span style="color: black"
+                    ><i class="fa fa-map-marker-alt" style="color: green"></i>
+                    Hà Nội</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-clock" style="color: green"></i>
+                    Full-time</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-money-bill-alt" style="color: green"></i>
+                    5-10 triệu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="apply flex">
+              <div class="apply-section flex">
+                <a class="heart-btn" href=""
+                  ><i class="far fa-heart" style="color: green"></i
+                ></a>
+                <a class="apply-btn" href="">Apply Now</a>
+              </div>
+              <div class="date">
+                <i
+                  class="far fa-calendar-alt"
+                  style="color: green; font-size: 14px"
+                ></i>
+                Hạn chót: Tháng 1, 2045
+              </div>
+            </div>
+          </div>
+          <div class="job-object full-time flex">
+            <div class="job-content flex">
+              <img
+                class="img-job flex"
+                src="images/ava1.jpg"
+                alt="ava1"
+                style="width: 90px; height: 90px"
+              />
+              <div class="job-description flex">
+                <a class="job-name flex" href="job_detail.html"
+                  >Chuyên viên quan hệ khách hàng</a
+                >
+                <div>
+                  <span style="color: black"
+                    ><i class="fa fa-map-marker-alt" style="color: green"></i>
+                    Thành phố Hồ Chí Minh</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-clock" style="color: green"></i>
+                    Full-time</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-money-bill-alt" style="color: green"></i>
+                    8-10 triệu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="apply flex">
+              <div class="apply-section flex">
+                <a class="heart-btn" href=""
+                  ><i class="far fa-heart" style="color: green"></i
+                ></a>
+                <a class="apply-btn" href="">Apply Now</a>
+              </div>
+              <div class="date">
+                <i
+                  class="far fa-calendar-alt"
+                  style="color: green; font-size: 14px"
+                ></i>
+                Hạn chót: Tháng 1, 2045
+              </div>
+            </div>
+          </div>
+          <div class="job-object flex">
+            <div class="job-content flex">
+              <img
+                class="img-job flex"
+                src="images/ava1.jpg"
+                alt="ava1"
+                style="width: 90px; height: 90px"
+              />
+              <div class="job-description flex">
+                <a class="job-name flex" href="job_detail.html"
+                  >Chuyên viên quan hệ khách hàng</a
+                >
+                <div>
+                  <span style="color: black"
+                    ><i class="fa fa-map-marker-alt" style="color: green"></i>
+                    Thành phố Hồ Chí Minh</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-clock" style="color: green"></i>
+                    Full-time</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-money-bill-alt" style="color: green"></i>
+                    8-10 triệu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="apply flex">
+              <div class="apply-section flex">
+                <a class="heart-btn" href=""
+                  ><i class="far fa-heart" style="color: green"></i
+                ></a>
+                <a class="apply-btn" href="">Apply Now</a>
+              </div>
+              <div class="date">
+                <i
+                  class="far fa-calendar-alt"
+                  style="color: green; font-size: 14px"
+                ></i>
+                Hạn chót: Tháng 1, 2045
+              </div>
+            </div>
+          </div>
+          <div class="job-object flex">
+            <div class="job-content flex">
+              <img
+                class="img-job flex"
+                src="images/ava1.jpg"
+                alt="ava1"
+                style="width: 90px; height: 90px"
+              />
+              <div class="job-description flex">
+                <a class="job-name flex" href="job_detail.html"
+                  >Chuyên viên quan hệ khách hàng</a
+                >
+                <div>
+                  <span style="color: black"
+                    ><i class="fa fa-map-marker-alt" style="color: green"></i>
+                    Thành phố Hồ Chí Minh</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-clock" style="color: green"></i>
+                    Full-time</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-money-bill-alt" style="color: green"></i>
+                    8-10 triệu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="apply flex">
+              <div class="apply-section flex">
+                <a class="heart-btn" href=""
+                  ><i class="far fa-heart" style="color: green"></i
+                ></a>
+                <a class="apply-btn" href="">Apply Now</a>
+              </div>
+              <div class="date">
+                <i
+                  class="far fa-calendar-alt"
+                  style="color: green; font-size: 14px"
+                ></i>
+                Hạn chót: Tháng 1, 2045
+              </div>
+            </div>
+          </div>
+          <div class="job-object flex">
+            <div class="job-content flex">
+              <img
+                class="img-job flex"
+                src="images/ava1.jpg"
+                alt="ava1"
+                style="width: 90px; height: 90px"
+              />
+              <div class="job-description flex">
+                <a class="job-name flex" href="job_detail.html"
+                  >Chuyên viên quan hệ khách hàng</a
+                >
+                <div>
+                  <span style="color: black"
+                    ><i class="fa fa-map-marker-alt" style="color: green"></i>
+                    Thành phố Hồ Chí Minh</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-clock" style="color: green"></i>
+                    Full-time</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-money-bill-alt" style="color: green"></i>
+                    8-10 triệu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="apply flex">
+              <div class="apply-section flex">
+                <a class="heart-btn" href=""
+                  ><i class="far fa-heart" style="color: green"></i
+                ></a>
+                <a class="apply-btn" href="">Apply Now</a>
+              </div>
+              <div class="date">
+                <i
+                  class="far fa-calendar-alt"
+                  style="color: green; font-size: 14px"
+                ></i>
+                Hạn chót: Tháng 1, 2045
+              </div>
+            </div>
+          </div>
+          <div class="job-object flex">
+            <div class="job-content flex">
+              <img
+                class="img-job flex"
+                src="images/ava1.jpg"
+                alt="ava1"
+                style="width: 90px; height: 90px"
+              />
+              <div class="job-description flex">
+                <a class="job-name flex" href="job_detail.html"
+                  >Chuyên viên quan hệ khách hàng</a
+                >
+                <div>
+                  <span style="color: black"
+                    ><i class="fa fa-map-marker-alt" style="color: green"></i>
+                    Thành phố Hồ Chí Minh</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-clock" style="color: green"></i>
+                    Full-time</span
+                  >
+                  <span style="color: black"
+                    ><i class="far fa-money-bill-alt" style="color: green"></i>
+                    8-10 triệu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="apply flex">
+              <div class="apply-section flex">
+                <a class="heart-btn" href=""
+                  ><i class="far fa-heart" style="color: green"></i
+                ></a>
+                <a class="apply-btn" href="">Apply Now</a>
+              </div>
+              <div class="date">
+                <i
+                  class="far fa-calendar-alt"
+                  style="color: green; font-size: 14px"
+                ></i>
+                Hạn chót: Tháng 1, 2045
+              </div>
+            </div>
+          </div>
+          <div class="readmore flex">
+            <div class="btn-more flex">
+              <a href="#">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="job-right-side flex">
+          <div class="job-filter flex">
+            <div class="salary flex">
+              <h3>Lọc theo mức lương</h3>
+              <div class="list-filter">
+                <button
+                  class="filter-option"
+                  data-filter="under1"
+                  onclick="filterJobs(event)"
+                >
+                  Dưới 1 triệu
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="1to5"
+                  onclick="filterJobs(event)"
+                >
+                  1 - 5 triệu
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="5to10"
+                  onclick="filterJobs(event)"
+                >
+                  5 - 10 triệu
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="over10"
+                  onclick="filterJobs(event)"
+                >
+                  10+ triệu
+                </button>
+              </div>
+            </div>
+            <div class="area flex">
+              <h3>Lọc theo khu vực</h3>
+              <div class="list-filter">
+                <button
+                  class="filter-option"
+                  data-filter="hanoi"
+                  onclick="filterJobs(event)"
+                >
+                  Hà Nội
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="hochiminh"
+                  onclick="filterJobs(event)"
+                >
+                  Hồ Chí Minh
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="nhatrang"
+                  onclick="filterJobs(event)"
+                >
+                  Nha Trang
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="cantho"
+                  onclick="filterJobs(event)"
+                >
+                  Cần Thơ
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="danang"
+                  onclick="filterJobs(event)"
+                >
+                  Đà Nẵng
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="binhduong"
+                  onclick="filterJobs(event)"
+                >
+                  Bình Dương
+                </button>
+              </div>
+            </div>
+            <div class="way flex">
+              <h3>Lọc theo hình thức</h3>
+              <div class="list-filter">
+                <button
+                  class="filter-option"
+                  data-filter="full-time"
+                  onclick="filterJobs(event)"
+                >
+                  Full-time
+                </button>
+                <button
+                  class="filter-option"
+                  data-filter="part-time"
+                  onclick="filterJobs(event)"
+                >
+                  Part-time
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </main>
+    <!------CONTENT SECTION END------>
+
+    <!------FOOTER SECTION BEGIN------->
+    <footer>
+      <div class="width-100 footer-background">
+        <div class="container flex footer-section">
+          <div class="list-access flex">
+            <h3>Về EasyClick</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">Giới thiệu</a></li>
+              <li><a href="construction.html">Tuyển dụng</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+              <li><a href="error404.html">Blogs</a></li>
+              <li><a href="error404.html">Chính sách bảo mật</a></li>
+              <li><a href="error404.html">Quy chế hoạt động</a></li>
+            </ul>
+          </div>
+
+          <div class="list-access flex">
+            <h3>Nhà tuyển dụng</h3>
+            <ul class="footer-list">
+              <li><a href="construction.html">Đăng tin tuyển dụng</a></li>
+              <li><a href="construction.html">Tìm kiếm hồ sơ</a></li>
+              <li><a href="construction.html">Kết nối ứng viên</a></li>
+              <li><a href="construction.html">Mô tả công việc</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hồ sơ và CV</h3>
+            <ul class="footer-list">
+              <li><a href="profile.html">Quản lý profile</a></li>
+              <li><a href="construction.html">Hướng dẫn viết CV</a></li>
+              <li><a href="construction.html">Review</a></li>
+              <li><a href="construction.html">Trắc nghiệm tâm lý</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Xây dựng sự nghiệp</h3>
+            <ul class="footer-list">
+              <li><a href="jobs.html">Việc làm tốt nhất</a></li>
+              <li><a href="jobs.html">Việc làm lương cao</a></li>
+              <li><a href="jobs.html">Việc làm quản lý</a></li>
+              <li><a href="jobs.html">Việc làm IT</a></li>
+              <li><a href="jobs.html">Việc làm Full-time</a></li>
+              <li><a href="jobs.html">Việc làm Part-time</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul class="get-in-touch">
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>E-MAIL: info@easyclick.com</p>
+              </li>
+              <li>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>Đại chỉ: 123 Lê Văn Lương, Nhà Bè, Tp.Hồ Chí Minh</p>
+              </li>
+              <li>
+                <i class="fa fa-fax" aria-hidden="true"></i>
+                <p>HOTLINE: (+84) -123 456 789</p>
+              </li>
+              <li>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <p>WEBSITE: https://www.easyclick.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr style="border-width: thin" />
+        <span class="copyright flex"
+          >Copyright © 2024 by Nguyen Diep Thai Ha - Nền tảng tìm kiếm việc làm
+          thông minh, uy tín.
+        </span>
+      </div>
+    </footer>
+    <!------FOOTER SECTION END------>
+
+    <script src="jscript.js"></script>
+  </body>
+</html>

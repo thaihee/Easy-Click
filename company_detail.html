@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EasyClick-Trang web tìm kiếm việc làm tiện lợi và hữu ích cho giới trẻ"
+    />
+    <meta name="keyword" content="EasyClick, tìm việc, việc làm" />
+    <title>EasyClick</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--  -->
+    <!-- Link Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Logo -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <!--  -->
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!------HEADER SECTION BEGIN------>
+    <header>
+      <div class="wrapper">
+        <div class="container header flex">
+          <div class="nav-left flex">
+            <a class="logo-company flex" href="index.html"
+              ><img src="images/logo-com.png"
+            /></a>
+            <ul class="menu flex">
+              <li class="menu-item flex">
+                <a href="profile.html">Hồ sơ</a>
+                <ul>
+                  <li><a href="profile.html">Profile/CV</a></li>
+                  <li><a href="construction.html">Mẫu CV</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="jobs.html"
+                  >Việc làm</a
+                >
+                <ul>
+                  <li><a href="jobs.html">Tìm việc</a></li>
+                  <li><a href="jobs.html">Công việc IT</a></li>
+                  <li><a href="jobs.html">Công việc Fulltime</a></li>
+                  <li><a href="jobs.html">Công việc Partime</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="companies.html" style="color: var(--primary-color)">Công ty</a>
+              </li>
+              <li class="menu-item flex">
+                <a href="about.html">Về chúng tôi</a>
+              </li>
+              <li class="menu-item flex">
+                <a href="contact.html">Liên lạc</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-right flex">
+            <a href="login.html" class="button-signup"> Đăng Nhập </a>
+            <a href="register.html" class="button-signin"> Đăng ký </a>
+            <a href="construction.html" class="button-resume">
+              Nhà tuyển dụng / Đăng tin
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------HEADER SECTION END------>
+
+    <!------CONTENT SECTION BEGIN------>
+    <main>
+      <!-- Chi tiết công ty-->
+      <div class="com-detail-header flex">
+        <div class="breadcrumb flex">
+          <span class="pre-page flex"
+            ><a href="companies.html">Danh sách công ty</a></span
+          >
+          <span class="icon-arrow flex">
+            <i
+              class="fa fa-chevron-right"
+              style="color: var(--primary-color)"
+            ></i>
+          </span>
+          <span class="current-page flex">
+            Thông tin công ty & tin tuyển dụng từ Công ty Cổ phần viễn thông FPT
+          </span>
+        </div>
+        <div class="com-banner flex">
+          <div class="com-logo flex">
+            <img src="images/company/fpt-logo.webp" alt="" />
+          </div>
+          <div class="com-banner-header flex">
+            <img class="flex" src="images/company/fpt-banner.webp" alt="" />
+          </div>
+          <div class="com-banner-content flex">
+            <div class="com-banner-content-info flex">
+              <h2 class="flex">Công ty Cổ phần viễn thông FPT</h2>
+              <div class="com-banner-content-info-basic flex">
+                <span
+                  ><i
+                    class="fa fa-globe"
+                    style="color: white; margin-right: 10px"
+                  ></i>
+                  https://fptjobs.com</span
+                >
+                <span
+                  ><i
+                    class="far fa-building"
+                    style="color: white; margin-right: 10px"
+                  ></i>
+                  5000+ nhân viên
+                </span>
+                <span
+                  ><i
+                    class="far fa-user"
+                    style="color: white; margin-right: 10px"
+                  ></i>
+                  2548 người theo dõi</span
+                >
+              </div>
+            </div>
+            <button class="flex" style="cursor: pointer">
+              <i
+                class="fa fa-plus"
+                style="color: var(--primary-color); margin-right: 10px"
+              ></i>
+              Theo dõi công ty
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- thông tin công ty -->
+      <div class="com-detail-body flex">
+        <div class="com-detail-body-left flex">
+          <div class="com-description flex">
+            <div class="com-description-header flex">
+              <span class="flex">Giới thiệu công ty</span>
+            </div>
+            <div class="com-description-content flex">
+              <p class="flex">
+                Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam FPT,
+                Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT Telecom) hiện
+                là một trong những nhà cung cấp dịch vụ viễn thông và Internet
+                có uy tín và được khách hàng yêu mến tại Việt Nam và khu vực.
+              </p>
+              <p class="flex">
+                Thành lập ngày 31/01/1997, khởi nguồn từ Trung tâm Dịch vụ Trực
+                tuyến do 4 thành viên sáng lập cùng sản phẩm mạng Intranet đầu
+                tiên của Việt Nam mang tên “Trí tuệ Việt Nam – TTVN”, sản phẩm
+                được coi là đặt nền móng cho sự phát triển của Internet tại Việt
+                Nam. Sau 20 năm hoạt động, FPT Telecom đã lớn mạnh vượt bậc với
+                hơn 7,000 nhân viên chính thức, gần 200 văn phòng điểm giao dịch
+                thuộc hơn 80 chi nhánh tại 59 tỉnh thành trên toàn quốc. Bên
+                cạnh đó, Công ty đã và đang đặt dấu ấn trên trường quốc tế bằng
+                8 chi nhánh trải dài khắp Campuchia, cũng như việc được cấp giấy
+                phép kinh doanh dịch vụ tại Myanmar.
+              </p>
+              <p class="flex">
+                Với sứ mệnh tiên phong đưa Internet đến với người dân Việt Nam
+                và mong muốn mỗi gia đình Việt Nam đều sử dụng ít nhất một dịch
+                vụ của FPT Telecom, đồng hành cùng phương châm “Khách hàng là
+                trọng tâm”, chúng tôi không ngừng nỗ lực đầu tư hạ tầng, nâng
+                cấp chất lượng sản phẩm – dịch vụ, tăng cường ứng dụng công nghệ
+                mới để mang đến cho khách hàng những trải nghiệm sản phẩm dịch
+                vụ vượt trội.
+              </p>
+            </div>
+          </div>
+          <div class="com-jobs flex">
+            <div class="com-jobs-header flex">
+              <span class="flex">Tuyển dụng</span>
+            </div>
+            <div class="com-jobs-content flex">
+              <div class="box-search">
+                <div class="input-group">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="searchTerm"
+                      placeholder="Bạn cần tìm vị trí nào?"
+                    />
+                    <button type="submit" class="searchButton">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="com-jobs-list">
+                <div class="com-jobs-item flex">
+                  <div class="com-jobs-item-content flex">
+                    <div class="logo-com-job flex">
+                      <img
+                        class="flex"
+                        src="images/company/fpt-logo.webp"
+                        alt="ava1"
+                      />
+                    </div>
+                    <div class="com-jobs-item-description flex">
+                      <div class="com-job-item-header flex">
+                        <div class="com-job-title flex">
+                          <span class="com-job-name flex"
+                            >Nhân Viên Kinh Doanh Viễn Thông</span
+                          >
+                          <span class="com-job-sub-title flex"
+                            >Công ty Cổ phần viễn thông FPT</span
+                          >
+                        </div>
+                        <span style="color: black"
+                          ><i
+                            class="far fa-money-bill-alt"
+                            style="color: green"
+                          ></i>
+                          8-10 triệu</span
+                        >
+                      </div>
+                      <div class="com-job-apply flex">
+                        <div class="apply-section flex">
+                          <a class="apply-btn" href="job_detail.html">Ứng tuyển</a>
+                          <a class="heart-btn" href="#"
+                            ><i class="far fa-heart" style="color: green"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="com-jobs-item flex">
+                  <div class="com-jobs-item-content flex">
+                    <div class="logo-com-job flex">
+                      <img
+                        class="flex"
+                        src="images/company/fpt-logo.webp"
+                        alt="ava1"
+                      />
+                    </div>
+                    <div class="com-jobs-item-description flex">
+                      <div class="com-job-item-header flex">
+                        <div class="com-job-title flex">
+                          <span class="com-job-name flex"
+                            >Nhân Viên Kinh Doanh Viễn Thông</span
+                          >
+                          <span class="com-job-sub-title flex"
+                            >Công ty Cổ phần viễn thông FPT</span
+                          >
+                        </div>
+                        <span style="color: black"
+                          ><i
+                            class="far fa-money-bill-alt"
+                            style="color: green"
+                          ></i>
+                          8-10 triệu</span
+                        >
+                      </div>
+                      <div class="com-job-apply flex">
+                        <div class="apply-section flex">
+                          <a class="apply-btn" href="job_detail.html">Ứng tuyển</a>
+                          <a class="heart-btn" href="#"
+                            ><i class="far fa-heart" style="color: green"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="com-jobs-item flex">
+                  <div class="com-jobs-item-content flex">
+                    <div class="logo-com-job flex">
+                      <img
+                        class="flex"
+                        src="images/company/fpt-logo.webp"
+                        alt="ava1"
+                      />
+                    </div>
+                    <div class="com-jobs-item-description flex">
+                      <div class="com-job-item-header flex">
+                        <div class="com-job-title flex">
+                          <span class="com-job-name flex"
+                            >Nhân Viên Kinh Doanh Viễn Thông</span
+                          >
+                          <span class="com-job-sub-title flex"
+                            >Công ty Cổ phần viễn thông FPT</span
+                          >
+                        </div>
+                        <span style="color: black"
+                          ><i
+                            class="far fa-money-bill-alt"
+                            style="color: green"
+                          ></i>
+                          8-10 triệu</span
+                        >
+                      </div>
+                      <div class="com-job-apply flex">
+                        <div class="apply-section flex">
+                          <a class="apply-btn" href="job_detail.html">Ứng tuyển</a>
+                          <a class="heart-btn" href="#"
+                            ><i class="far fa-heart" style="color: green"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="com-jobs-item flex">
+                  <div class="com-jobs-item-content flex">
+                    <div class="logo-com-job flex">
+                      <img
+                        class="flex"
+                        src="images/company/fpt-logo.webp"
+                        alt="ava1"
+                      />
+                    </div>
+                    <div class="com-jobs-item-description flex">
+                      <div class="com-job-item-header flex">
+                        <div class="com-job-title flex">
+                          <span class="com-job-name flex"
+                            >Nhân Viên Kinh Doanh Viễn Thông</span
+                          >
+                          <span class="com-job-sub-title flex"
+                            >Công ty Cổ phần viễn thông FPT</span
+                          >
+                        </div>
+                        <span style="color: black"
+                          ><i
+                            class="far fa-money-bill-alt"
+                            style="color: green"
+                          ></i>
+                          8-10 triệu</span
+                        >
+                      </div>
+                      <div class="com-job-apply flex">
+                        <div class="apply-section flex">
+                          <a class="apply-btn" href="job_detail.html">Ứng tuyển</a>
+                          <a class="heart-btn" href="#"
+                            ><i class="far fa-heart" style="color: green"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="com-jobs-item flex">
+                  <div class="com-jobs-item-content flex">
+                    <div class="logo-com-job flex">
+                      <img
+                        class="flex"
+                        src="images/company/fpt-logo.webp"
+                        alt="ava1"
+                      />
+                    </div>
+                    <div class="com-jobs-item-description flex">
+                      <div class="com-job-item-header flex">
+                        <div class="com-job-title flex">
+                          <span class="com-job-name flex"
+                            >Nhân Viên Kinh Doanh Viễn Thông</span
+                          >
+                          <span class="com-job-sub-title flex"
+                            >Công ty Cổ phần viễn thông FPT</span
+                          >
+                        </div>
+                        <span style="color: black"
+                          ><i
+                            class="far fa-money-bill-alt"
+                            style="color: green"
+                          ></i>
+                          8-10 triệu</span
+                        >
+                      </div>
+                      <div class="com-job-apply flex">
+                        <div class="apply-section flex">
+                          <a class="apply-btn" href="job_detail.html">Ứng tuyển</a>
+                          <a class="heart-btn" href="#"
+                            ><i class="far fa-heart" style="color: green"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="com-jobs-item flex">
+                  <div class="com-jobs-item-content flex">
+                    <div class="logo-com-job flex">
+                      <img
+                        class="flex"
+                        src="images/company/fpt-logo.webp"
+                        alt="ava1"
+                      />
+                    </div>
+                    <div class="com-jobs-item-description flex">
+                      <div class="com-job-item-header flex">
+                        <div class="com-job-title flex">
+                          <span class="com-job-name flex"
+                            >Nhân Viên Kinh Doanh Viễn Thông</span
+                          >
+                          <span class="com-job-sub-title flex"
+                            >Công ty Cổ phần viễn thông FPT</span
+                          >
+                        </div>
+                        <span style="color: black"
+                          ><i
+                            class="far fa-money-bill-alt"
+                            style="color: green"
+                          ></i>
+                          8-10 triệu</span
+                        >
+                      </div>
+                      <div class="com-job-apply flex">
+                        <div class="apply-section flex">
+                          <a class="apply-btn" href="job_detail.html">Ứng tuyển</a>
+                          <a class="heart-btn" href="#"
+                            ><i class="far fa-heart" style="color: green"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="readmore flex">
+                  <div class="btn-more flex">
+                    <a href="#">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="com-detail-body-right flex">
+          <div class="com-contact flex">
+            <div class="com-contact-header flex">
+              <span class="flex">Thông tin liên hệ</span>
+            </div>
+            <div class="com-contact-content flex">
+              <div class="com-contact-address flex">
+                <span class="flex">
+                  <i
+                    class="fa fa-location-arrow"
+                    aria-hidden="true"
+                    style="color: var(--primary-color)"
+                  ></i>
+                  <p>Địa chỉ công ty</p>
+                </span>
+                <span class="flex"
+                  >Tầng 2, tòa nhà FPT, Phố Duy Tân, Cầu Giấy, Hà Nội</span
+                >
+              </div>
+              <div class="com-contact-map flex">
+                <div class="flex">
+                  <span class="flex">
+                    <i
+                      class="fa fa-map"
+                      aria-hidden="true"
+                      style="color: var(--primary-color)"
+                    ></i>
+                    <p>Xem bản đồ</p>
+                  </span>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14896.18523463724!2d105.782778!3d21.030833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b355336d23%3A0xb337376aa7a9622f!2zVG_DoCBuaMOgIEZQVCBD4bqndSBHaeG6pXk!5e0!3m2!1svi!2sus!4v1725836338056!5m2!1svi!2sus"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  class="mini-com-map flex"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+    </main>
+    <!------CONTENT SECTION END------>
+
+    <!------FOOTER SECTION BEGIN------->
+    <footer>
+      <div class="width-100 footer-background">
+        <div class="container flex footer-section">
+          <div class="list-access flex">
+            <h3>Về EasyClick</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">Giới thiệu</a></li>
+              <li><a href="construction.html">Tuyển dụng</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+              <li><a href="error404.html">Blogs</a></li>
+              <li><a href="error404.html">Chính sách bảo mật</a></li>
+              <li><a href="error404.html">Quy chế hoạt động</a></li>
+            </ul>
+          </div>
+
+          <div class="list-access flex">
+            <h3>Nhà tuyển dụng</h3>
+            <ul class="footer-list">
+              <li><a href="construction.html">Đăng tin tuyển dụng</a></li>
+              <li><a href="construction.html">Tìm kiếm hồ sơ</a></li>
+              <li><a href="construction.html">Kết nối ứng viên</a></li>
+              <li><a href="construction.html">Mô tả công việc</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hồ sơ và CV</h3>
+            <ul class="footer-list">
+              <li><a href="profile.html">Quản lý profile</a></li>
+              <li><a href="construction.html">Hướng dẫn viết CV</a></li>
+              <li><a href="construction.html">Review</a></li>
+              <li><a href="construction.html">Trắc nghiệm tâm lý</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Xây dựng sự nghiệp</h3>
+            <ul class="footer-list">
+              <li><a href="jobs.html">Việc làm tốt nhất</a></li>
+              <li><a href="jobs.html">Việc làm lương cao</a></li>
+              <li><a href="jobs.html">Việc làm quản lý</a></li>
+              <li><a href="jobs.html">Việc làm IT</a></li>
+              <li><a href="jobs.html">Việc làm Full-time</a></li>
+              <li><a href="jobs.html">Việc làm Part-time</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul class="get-in-touch">
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>E-MAIL: info@easyclick.com</p>
+              </li>
+              <li>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>Đại chỉ: 123 Lê Văn Lương, Nhà Bè, Tp.Hồ Chí Minh</p>
+              </li>
+              <li>
+                <i class="fa fa-fax" aria-hidden="true"></i>
+                <p>HOTLINE: (+84) -123 456 789</p>
+              </li>
+              <li>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <p>WEBSITE: https://www.easyclick.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr style="border-width: thin" />
+        <span class="copyright flex"
+          >Copyright © 2024 by Nguyen Diep Thai Ha - Nền tảng tìm kiếm việc làm
+          thông minh, uy tín.
+        </span>
+      </div>
+    </footer>
+    <!------FOOTER SECTION END------>
+
+    <script src="jscript.js"></script>
+  </body>
+</html>

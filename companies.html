@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EasyClick-Trang web tìm kiếm việc làm tiện lợi và hữu ích cho giới trẻ"
+    />
+    <meta name="keyword" content="EasyClick, tìm việc, việc làm" />
+    <title>EasyClick</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--  -->
+    <!-- Link Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Logo -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <!--  -->
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!------HEADER SECTION BEGIN------>
+    <header>
+      <div class="wrapper">
+        <div class="container header flex">
+          <div class="nav-left flex">
+            <a class="logo-company flex" href="index.html"
+              ><img src="images/logo-com.png"
+            /></a>
+            <ul class="menu flex">
+              <li class="menu-item flex">
+                <a href="profile.html">Hồ sơ</a>
+                <ul>
+                  <li><a href="profile.html">Profile/CV</a></li>
+                  <li><a href="construction.html">Mẫu CV</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="jobs.html">Việc làm</a>
+                <ul>
+                  <li><a href="jobs.html">Tìm việc</a></li>
+                  <li><a href="jobs.html">Công việc IT</a></li>
+                  <li><a href="jobs.html">Công việc Fulltime</a></li>
+                  <li><a href="jobs.html">Công việc Partime</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="companies.html" style="color: var(--primary-color)"
+                  >Công ty</a
+                >
+              </li>
+              <li class="menu-item flex">
+                <a href="about.html">Về chúng tôi</a>
+              </li>
+              <li class="menu-item flex">
+                <a href="contact.html">Liên lạc</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-right flex">
+            <a href="login.html" class="button-signup"> Đăng Nhập </a>
+            <a href="register.html" class="button-signin"> Đăng ký </a>
+            <a href="construction.html" class="button-resume">
+              Nhà tuyển dụng / Đăng tin
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------HEADER SECTION END------>
+
+    <!------CONTENT SECTION BEGIN------>
+    <main>
+      <div class="cover-page flex">
+        <h1 class="title-page flex">CÁC CÔNG TY</h1>
+      </div>
+      <!-- Thanh tim kiem -->
+      <div class="research-bar flex">
+        <div class="row flex">
+          <div class="form flex">
+            <input
+              type="text"
+              id="SearchCom"
+              onkeyup="searchCompanyFuntion()"
+              class="flex"
+              placeholder="Nhập tên công ty"
+            />
+          </div>
+        </div>
+        <div>
+          <div class="form">
+            <button class="search"><a href="jobs.html">Tìm kiếm</a></button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="companies flex">
+        <div class="com-section flex">
+          <h1>DANH SÁCH CÁC CÔNG TY</h1>
+          <div class="com-list flex">
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/fpt-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/fpt-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/fpt-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/fpt-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/fpt-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/fpt-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/fpt-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+            <div class="com-card flex">
+              <a href="company_detail.html" class="com-card-header flex">
+                <img
+                  class="flex"
+                  src="images/company/fpt-banner.webp"
+                  alt=""
+                />
+              </a>
+              <div class="com-card-content flex">
+                <h4 class="com-name flex">Công ty Cổ phần viễn thông FPT</h4>
+                <span class="flex"
+                  >" Là thành viên thuộc Tập đoàn công nghệ hàng đầu Việt Nam
+                  FPT, Công ty Cổ phần Viễn thông FPT (tên gọi tắt là FPT
+                  Telecom) hiện là một trong những nhà cung cấp dịch vụ viễn
+                  thông và Internet có uy tín và được khách hàng yêu mến tại
+                  Việt Nam và khu vực."</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!------CONTENT SECTION END------>
+
+    <!------FOOTER SECTION BEGIN------->
+    <footer>
+      <div class="width-100 footer-background">
+        <div class="container flex footer-section">
+          <div class="list-access flex">
+            <h3>Về EasyClick</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">Giới thiệu</a></li>
+              <li><a href="construction.html">Tuyển dụng</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+              <li><a href="error404.html">Blogs</a></li>
+              <li><a href="error404.html">Chính sách bảo mật</a></li>
+              <li><a href="error404.html">Quy chế hoạt động</a></li>
+            </ul>
+          </div>
+
+          <div class="list-access flex">
+            <h3>Nhà tuyển dụng</h3>
+            <ul class="footer-list">
+              <li><a href="construction.html">Đăng tin tuyển dụng</a></li>
+              <li><a href="construction.html">Tìm kiếm hồ sơ</a></li>
+              <li><a href="construction.html">Kết nối ứng viên</a></li>
+              <li><a href="construction.html">Mô tả công việc</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hồ sơ và CV</h3>
+            <ul class="footer-list">
+              <li><a href="profile.html">Quản lý profile</a></li>
+              <li><a href="construction.html">Hướng dẫn viết CV</a></li>
+              <li><a href="construction.html">Review</a></li>
+              <li><a href="construction.html">Trắc nghiệm tâm lý</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Xây dựng sự nghiệp</h3>
+            <ul class="footer-list">
+              <li><a href="jobs.html">Việc làm tốt nhất</a></li>
+              <li><a href="jobs.html">Việc làm lương cao</a></li>
+              <li><a href="jobs.html">Việc làm quản lý</a></li>
+              <li><a href="jobs.html">Việc làm IT</a></li>
+              <li><a href="jobs.html">Việc làm Full-time</a></li>
+              <li><a href="jobs.html">Việc làm Part-time</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul class="get-in-touch">
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>E-MAIL: info@easyclick.com</p>
+              </li>
+              <li>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>Đại chỉ: 123 Lê Văn Lương, Nhà Bè, Tp.Hồ Chí Minh</p>
+              </li>
+              <li>
+                <i class="fa fa-fax" aria-hidden="true"></i>
+                <p>HOTLINE: (+84) -123 456 789</p>
+              </li>
+              <li>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <p>WEBSITE: https://www.easyclick.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr style="border-width: thin" />
+        <span class="copyright flex"
+          >Copyright © 2024 by Nguyen Diep Thai Ha - Nền tảng tìm kiếm việc làm
+          thông minh, uy tín.
+        </span>
+      </div>
+    </footer>
+    <!------FOOTER SECTION END------>
+
+    <script src="jscript.js"></script>
+  </body>
+</html>

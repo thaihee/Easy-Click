@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EasyClick-Trang web tìm kiếm việc làm tiện lợi và hữu ích cho giới trẻ"
+    />
+    <meta name="keyword" content="EasyClick, tìm việc, việc làm" />
+    <title>EasyClick</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--  -->
+    <!-- Link Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Logo -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <!--  -->
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!------HEADER SECTION BEGIN------>
+    <header>
+      <div class="wrapper">
+        <div class="container header flex">
+          <div class="nav-left flex">
+            <a class="logo-company flex" href="index.html"
+              ><img src="images/logo-com.png"
+            /></a>
+            <ul class="menu flex">
+              <li class="menu-item flex">
+                <a href="profile.html">Hồ sơ</a>
+                <ul>
+                  <li><a href="profile.html">Profile/CV</a></li>
+                  <li><a href="construction.html">Mẫu CV</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="jobs.html">Việc làm</a>
+                <ul>
+                  <li><a href="jobs.html">Tìm việc</a></li>
+                  <li><a href="jobs.html">Công việc IT</a></li>
+                  <li><a href="jobs.html">Công việc Fulltime</a></li>
+                  <li><a href="jobs.html">Công việc Partime</a></li>
+                </ul>
+              </li>
+              <li class="menu-item flex">
+                <a href="companies.html">Công ty</a>
+              </li>
+              <li class="menu-item flex">
+                <a href="about.html">Về chúng tôi</a>
+              </li>
+              <li class="menu-item flex">
+                <a href="contact.html">Liên lạc</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-right flex">
+            <a href="login.html" class="button-signup"> Đăng Nhập </a>
+            <a href="register.html" class="button-signin"> Đăng ký </a>
+            <a href="construction.html" class="button-resume">
+              Nhà tuyển dụng / Đăng tin
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------HEADER SECTION END------>
+
+    <!------CONTENT SECTION BEGIN------>
+    <main>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="images/home.jpg" style="width: 100%" />
+          <div class="text-over">
+            <h1 class="name">EasyClick</h1>
+            <p>
+              Trang web của chúng tôi cung cấp hàng ngàn cơ hội việc làm, giúp
+              bạn kết nối với nhà tuyển dụng uy tín và tìm được công việc mơ ước
+              một cách nhanh chóng và dễ dàng!
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/home1.jpg" style="width: 100%" />
+          <div class="text-over">
+            <h1 class="name">EasyClick</h1>
+            <p>
+              Trang web của chúng tôi cung cấp hàng ngàn cơ hội việc làm, giúp
+              bạn kết nối với nhà tuyển dụng uy tín và tìm được công việc mơ ước
+              một cách nhanh chóng và dễ dàng!
+            </p>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <!--  -->
+
+      <!-- Thanh tim kiem -->
+      <div class="research-bar flex">
+        <div class="row flex">
+          <div class="form flex">
+            <input type="text" placeholder="Từ khóa" />
+          </div>
+          <div class="form flex">
+            <select name="mySelect" id="mySelect">
+              <option value="" disabled selected hidden>Hình thức</option>
+              <option value="1">Full-time</option>
+              <option value="2">Part-time</option>
+            </select>
+          </div>
+          <div class="form flex">
+            <select name="mySelect" id="mySelect">
+              <option value="" disabled selected hidden>Khu vực</option>
+              <option value="1">Hà Nội</option>
+              <option value="2">Đà Nẵng</option>
+              <option value="3">Hồ Chí Minh</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <div class="form">
+            <button class="search"><a href="jobs.html">Tìm kiếm</a></button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!-- Khu vực tìm kiếm -->
+      <div class="area-work">
+        <h2>Các khu vực hàng đầu</h2>
+        <div class="destination flex">
+          <div class="card-place flex">
+            <a href="jobs.html">
+              <img class="des-photo flex" src="images/hanoi.jpg" alt="" />
+              <div class="name-card flex">
+                <h3 class="flex">Hà Nội</h3>
+                <span class="flex">49,619 việc làm</span>
+              </div>
+            </a>
+          </div>
+          <div class="card-place flex">
+            <a href="jobs.html">
+              <img class="des-photo flex" src="images/danang.jpg" alt="" />
+              <div class="name-card flex">
+                <h3 class="flex">Đà Nẵng</h3>
+                <span class="flex">44,557 việc làm</span>
+              </div></a
+            >
+          </div>
+          <div class="card-place flex">
+            <a href="jobs.html">
+              <img class="des-photo flex" src="images/nhatrang.jpg" alt="" />
+              <div class="name-card flex">
+                <h3 class="flex">Nha Trang</h3>
+                <span class="flex">38,321 việc làm</span>
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="destination flex">
+          <div class="card-place flex">
+            <a href="jobs.html">
+              <img class="des-photo flex" src="images/cantho.jpeg" alt="" />
+              <div class="name-card flex">
+                <h3 class="flex">Cần Thơ</h3>
+                <span class="flex">47,456 việc làm</span>
+              </div></a
+            >
+          </div>
+          <div class="card-place flex">
+            <a href="jobs.html">
+              <img class="des-photo flex" src="images/binhduong.jpeg" alt="" />
+              <div class="name-card flex">
+                <h3 class="flex">Bình Dương</h3>
+                <span class="flex">45,321 việc làm</span>
+              </div></a
+            >
+          </div>
+          <div class="card-place flex">
+            <a href="jobs.html">
+              <img class="des-photo flex" src="images/hochiminh.jpg" alt="" />
+              <div class="name-card flex">
+                <h3 class="flex">TP Hồ Chí Minh</h3>
+                <span class="flex">45,666 việc làm</span>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Top ngành -->
+      <div class="top-jobs">
+        <h2>Top ngành nghề phổ biến</h2>
+        <div class="job-table flex">
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html">
+              <div class="job-icon flex">
+                <img src="images/jobs/bao-chi-truyen-hinh.webp" alt="" />
+              </div>
+              <span class="flex">Báo chí</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/bat-dong-san.png" alt="" />
+              </div>
+              <span class="flex">Bất động sản</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/bien-phien-dich.png" alt="" />
+              </div>
+              <span class="flex">Phiên dịch viên</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/cong-nghe-thong-tin.png" alt="" />
+              </div>
+              <span class="flex">Công nghệ thông tin</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/du-lich.png" alt="" />
+              </div>
+              <span class="flex">Du lịch</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/co-khi-che-tao-tu-dong-hoa.png" alt="" />
+              </div>
+              <span class="flex">Cơ khí</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/dien-tu-vien-thong.png" alt="" />
+              </div>
+              <span class="flex">Viễn thông</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/chung-khoan-vang-ngoai-te.png" alt="" />
+              </div>
+              <span class="flex">Chứng khoán</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/hanh-chinh-van-phong.png" alt="" />
+              </div>
+              <span class="flex">Hành chính văn phòng</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/giao-duc-dao-tao.png" alt="" />
+              </div>
+              <span class="flex">Giáo dục</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/kien-truc.png" alt="" />
+              </div>
+              <span class="flex">Kiến trúc</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/luat-phap-ly.png" alt="" />
+              </div>
+              <span class="flex">Luật</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/logistics.png" alt="" />
+              </div>
+              <span class="flex">Logistics</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img
+                  src="images/jobs/my-thuat-nghe-thuat-dien-anh.png"
+                  alt=""
+                />
+              </div>
+              <span class="flex">Mỹ thuật công nghiệp</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/thiet-ke-do-hoa.png" alt="" />
+              </div>
+              <span class="flex">Thiết kế đồ họa</span></a
+            >
+          </div>
+          <div class="job-item flex">
+            <a class="job-btn flex" href="jobs.html"
+              ><div class="job-icon flex">
+                <img src="images/jobs/ngan-hang-tai-chinh.png" alt="" />
+              </div>
+              <span class="flex">Ngân hàng</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Hướng dẫn  -->
+      <div class="tutorial">
+        <h2>Ứng tuyển công việc mơ ước</h2>
+        <div class="tut-section flex">
+          <div class="left-side flex">
+            <img class="flex" src="images/boy-large.png" alt="" />
+          </div>
+          <div class="right-side flex">
+            <div class="up-side flex">
+              <div class="tut-card flex">
+                <div class="tut-thumb flex">
+                  <img class="flex" src="images/icon1.png" alt="" />
+                  <span class="stage-text flex">01</span>
+                </div>
+                <div class="tut-description flex">
+                  <h4>Đăng ký tài khoản</h4>
+                  <span class="tut-detail">
+                    Tạo tài khoản để tìm kiếm công việc dễ dàng, nhanh chóng và
+                    phù hợp nhất.
+                  </span>
+                </div>
+              </div>
+              <div class="tut-card flex">
+                <div class="tut-thumb flex">
+                  <img class="flex" src="images/icon2.png" alt="" />
+                  <span class="stage-text flex">02</span>
+                </div>
+                <div class="tut-description flex">
+                  <h4>Tìm kiếm công việc</h4>
+                  <span class="tut-detail">
+                    Tìm kiếm những vị trí công việc tốt nhất và phù hợp với kỹ
+                    năng của bạn.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="down-side flex">
+              <div class="tut-card flex">
+                <div class="tut-thumb flex">
+                  <img class="flex" src="images/icon3.png" alt="" />
+                  <span class="stage-text flex">03</span>
+                </div>
+                <div class="tut-description flex">
+                  <h4>Tạo hồ sơ online</h4>
+                  <span class="tut-detail">
+                    Tạo hồ sơ online chính xác, hấp dẫn nhà tuyển dụng.
+                  </span>
+                </div>
+              </div>
+              <div class="tut-card flex">
+                <div class="tut-thumb flex">
+                  <img class="flex" src="images/icon3.png" alt="" />
+                  <span class="stage-text flex">04</span>
+                </div>
+                <div class="tut-description flex">
+                  <h4>Nộp hồ sơ online</h4>
+                  <span class="tut-detail">
+                    Nộp hồ sơ online ngay khi tìm được công việc yêu thích để
+                    nhà tuyển dụng liên hệ nhanh nhất với bạn.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Promote -->
+      <div class="promote flex">
+        <div class="pro-section flex">
+          <div class="pro-left-side flex">
+            <span class="pro-title flex">Bạn có vị trí cần tuyển dụng?</span>
+            <span class="pro-detail flex">Nền tảng của EasyClick sẽ giúp bạn kết nối với những ứng viên tiềm năng nhanh chóng!</span>
+            <button class="btn-hiring flex"><a class="access-hiring" href="construction.html">Đăng tin miễn phí</a></button>
+          </div>
+          <div class="pro-right-side flex">
+            <img class="pro-photo flex" src="images/employer-intro-2.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </main>
+    <!------CONTENT SECTION END------>
+
+    <!------FOOTER SECTION BEGIN------->
+    <footer>
+      <div class="footer-background">
+        <div class="container flex footer-section">
+          <div class="list-access flex">
+            <h3>Về EasyClick</h3>
+            <ul class="footer-list">
+              <li><a href="about.html">Giới thiệu</a></li>
+              <li><a href="construction.html">Tuyển dụng</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+              <li><a href="error404.html">Blogs</a></li>
+              <li><a href="error404.html">Chính sách bảo mật</a></li>
+              <li><a href="error404.html">Quy chế hoạt động</a></li>
+            </ul>
+          </div>
+
+          <div class="list-access flex">
+            <h3>Nhà tuyển dụng</h3>
+            <ul class="footer-list">
+              <li><a href="construction.html">Đăng tin tuyển dụng</a></li>
+              <li><a href="construction.html">Tìm kiếm hồ sơ</a></li>
+              <li><a href="construction.html">Kết nối ứng viên</a></li>
+              <li><a href="construction.html">Mô tả công việc</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hồ sơ và CV</h3>
+            <ul class="footer-list">
+              <li><a href="profile.html">Quản lý profile</a></li>
+              <li><a href="construction.html">Hướng dẫn viết CV</a></li>
+              <li><a href="construction.html">Review</a></li>
+              <li><a href="construction.html">Trắc nghiệm tâm lý</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Xây dựng sự nghiệp</h3>
+            <ul class="footer-list">
+              <li><a href="jobs.html">Việc làm tốt nhất</a></li>
+              <li><a href="jobs.html">Việc làm lương cao</a></li>
+              <li><a href="jobs.html">Việc làm quản lý</a></li>
+              <li><a href="jobs.html">Việc làm IT</a></li>
+              <li><a href="jobs.html">Việc làm Full-time</a></li>
+              <li><a href="jobs.html">Việc làm Part-time</a></li>
+            </ul>
+          </div>
+          <div class="list-access flex">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul class="get-in-touch">
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>E-MAIL: info@easyclick.com</p>
+              </li>
+              <li>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>Đại chỉ: 123 Lê Văn Lương, Nhà Bè, Tp.Hồ Chí Minh</p>
+              </li>
+              <li>
+                <i class="fa fa-fax" aria-hidden="true"></i>
+                <p>HOTLINE: (+84) -123 456 789</p>
+              </li>
+              <li>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <p>WEBSITE: https://www.easyclick.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr style="border-width: thin" />
+        <span class="copyright flex"
+          >Copyright © 2024 by Nguyen Diep Thai Ha - Nền tảng tìm kiếm việc làm
+          thông minh, uy tín.
+        </span>
+      </div>
+    </footer>
+    <!------FOOTER SECTION END------>
+
+    <script src="jscript.js"></script>
+  </body>
+</html>
